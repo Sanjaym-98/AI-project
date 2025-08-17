@@ -22,9 +22,8 @@ async function generateImage(prompt) {
 
     console.log("Image generation response:", response);
     // Convert blob to buffer
-   
+    const buffer = Buffer.from(await response.arrayBuffer());
     
-    // Post-process with sharp
     return sharp(buffer)
       .png()  // Convert to PNG
       .resize(768, 768)  // Downsample for web

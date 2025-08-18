@@ -32,5 +32,8 @@
     "textract": "^2.5.0",
     "tmp-promise": "^3.0.3",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.12"
   }
 }
